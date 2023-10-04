@@ -1,0 +1,70 @@
+<html>
+<head>
+<style>
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+body {
+  background-image: url('https://www.colourbox.com/preview/2911486-toned-image-of-a-man-holding-an-old-book-in-his-hands.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size:100%;
+font-size: 25;
+color: white;
+}
+</style>
+</head>
+<body>
+<a href = "page1.html " ><img src ="icon3.jpg" height="50" width="50"> </a>
+
+<form method="get" action="database2.php" >
+<div style="width: 400px;">
+</div>
+<div style="padding-bottom: 18px;font-size : 24px;" >
+<h2>CUSTOMER FEEDBACK</H2></div>
+<div style="padding-bottom: 18px;font-size : 18px;">Please help us improve our services by filling out this form.</div>
+<div style="display: flex; padding-bottom: 18px;width : 500px;">
+<div style=" margin-left : 0; margin-right : 1%; width : 49%;"> FIRST NAME<br/>
+<input type="text" id="data_3" name="data_3" style="width: 100%;" class="form-control" />
+</div>
+<div style=" margin-left : 1%; margin-right : 0; width : 49%;">LAST NAME<br/>
+<input type="text" id="data_4" name="data_4" style="width: 100%;" class="form-control"/>
+</div>
+</div><div style="display: flex; padding-bottom: 18px;width : 500px;">
+
+</div><div style="padding-bottom: 18px;">ARE YOU SATISFIED WITH OUR SERVICES?<br/>
+<select id="data_7" name="data_7" style="width : 500px;" class="form-control"><option>YES</option>
+<option> NO</option>
+</select>
+</div>
+<div style="padding-bottom: 18px;"> HOW IS OUR SERVICE?<br/>
+<select id="data_9" name="data_9" style="width : 500px;" class="form-control"><option>⭐⭐⭐⭐⭐</option>
+<option>⭐⭐⭐⭐</option>
+<option>⭐⭐⭐</option>
+<option>⭐⭐</option>
+<option>⭐</option>
+</select>
+</div>
+<div style="padding-bottom: 18px;">WOULD YOU RECOMMEND OUR SITES TO OTHERS?<br/>
+<select id="data_8" name="data_8" style="width : 500px;" class="form-control"><option>Yes</option>
+<option>No</option>
+<option>Not sure</option>
+</select>
+</div>
+<div>
+<label for="subject">Additional Feedback</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea></div>
+
+<div style="padding-bottom: 18px;"><input name="skip_Submit" value="Submit" type="submit"/></div>
+
+</form>
+</body>
+<html>

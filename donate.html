@@ -1,0 +1,220 @@
+<html>
+<head>
+<script  language="JavaScript">
+function confirm()
+
+{
+
+var txt;
+
+txt=document.getElementById("txt").value;
+
+if(confirm("press a button!"))
+
+{
+
+txt="you pressed ok,your feedback has been registered"
+
+}
+
+else
+
+{
+
+txt="you pressed cancel!";
+
+}
+
+}
+
+
+function myFunction() {
+  confirm("Press a button!");
+}
+
+
+
+
+function check()
+{
+uname=document.getElementById("uname").value;
+if(uname== " ")
+{
+   window.alert(" enter name");
+}
+if(!isNaN (uname))
+{
+     window.alert(" enter only character");
+}
+}
+</script>
+<style>
+.button {border-radius:50%;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: blink;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 18px;
+}
+#rcorners1 {
+  border-radius: 25px;
+border :2px solid #73AD21;
+  background: #73AD21;
+  padding: 20px; 
+  width: auto;
+  height: 75 px; 
+  text-align: center;
+  text-decoration:blink;
+}
+
+#rcorners2 {
+  border-radius: 25px;
+  border :2px solid #73AD21;
+ background: #73AD21;
+  padding: 20px; 
+  width: auto;
+  height: 75px;
+  text-align :center;
+  text-decoration:blink;
+}
+input{
+    font-size:28 px;
+    color:black;
+}
+input[type=text], select, textarea {
+  width: 25%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=number] {
+  width: 25%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type=email] {
+  width: 25%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+ input[type=reset] ,[type=submit]{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+footer{ color:blue; background-color: yellow ; padding : 40 px; text- align: center;}
+h1{ font-size: 48;font-family:monaco; text-align:center;background-color:yellow;padding:40 px; word-spacing:30 px; color :black;}
+header{ color:blue; background-color: yellow ; padding : 40 px :text-align:left; font-family:didot; font-size:28;}
+body {
+  background-image: url('https://www.colourbox.com/preview/2911486-toned-image-of-a-man-holding-an-old-book-in-his-hands.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size:100%;
+font-size: 25;
+color: white;
+}
+</style>
+</head>
+<body>
+<a href = "page1.html " ><img src ="icon3.jpg" height="50" width="50"> </a>
+
+<header>
+<mark>Welcome! 
+You can donate your books here!
+Please make sure that the books are
+useful and in good condition.</mark>
+</header>
+<center>
+<form method="get" action ="database1.php" align="center" >
+<fieldset>
+    <legend>Details:</legend>
+ First Name:<br>
+<input type="text" name="firstname" align="right" id="uname" onBlur= "check()"  required /><br /><br>
+Last Name: <br>
+<input type="text" name="lastname" align="center"id="uname" onBlur= "check()"  required /><br /><br>
+Email:<br>
+<input type="email" name="email" /><br /><br>
+City: <br>
+<input type="text" name="state" id="uname" onBlur= "check()"  required /><br /><br>
+Book Name: <br>
+<input type="text" name="pincode"  required /><br /><br>
+Donation Center:<br>
+ <input type="text" name="city" id="uname" onBlur= "check()"  required /><br /><br>
+Mobile Number:<br>
+ <input type="number" name="mobilenumber"   /><br /><br>
+</fieldset>
+<fieldset>
+    <legend>TYPES OF BOOKS YOU WOULD LIKE TO DONATE:</legend>
+<SELECT>
+<option> STORY BOOKS</option>
+<option> BIOGRAPHY </option>
+<option> AUTOBIOGRAPHY </option>
+<option> RECIPE BOOKS </option>
+<option> TEXTBOOKS </option>
+<option> NOTEBOOKS </option>
+</SELECT><BR><BR>
+</fieldset>
+
+<fieldset>
+    <legend>NO OF BOOKS YOU WOULD LIKE TO DONATE:</legend>
+<br>
+<input type="number" name=" NO OF BOOKS YOU WOULD LIKE TO DONATE"  required /><br /><br>
+</fieldset>
+
+<input type="reset" value="Reset">
+
+<input type="submit" value="Submit"  id="txt" onBlur="confirm()"/></div>
+
+
+</fieldset>
+<fieldset>
+<p id="rcorners1"><a href="contact.html" style="text-decoration:none";>CONTACT US</a> </p> 
+<p id="rcorners2"><a href="partner1.html" style="text-decoration:none";>OUR PARTNERS</a></p>
+</fieldset>
+
+  
+
+
+</body>
+</html>
+
+</form>
+
+</center>
+</body>
+</html>
+
